@@ -163,8 +163,6 @@ def consensus():
         }
     return jsonify(response), 200
 
-print('hello', )
-
 def port():
     if len(sys.argv) > 1:
         return sys.argv[1]
