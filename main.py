@@ -16,7 +16,7 @@ class Blockchain(object):
 
     def register_node(self, address):
         parsed_url = urlparse(address)
-        self.nodes(parsed_url.netloc)
+        self.nodes.add(parsed_url.netloc)
 
     def new_block(self, proof, previous_hash=None):
         block = {
